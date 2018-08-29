@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 	  console.log("Connected successfully to server");
 	 
 	  const db = client.db(dbName);
-	  const collection = db.collection('allTypesOfTea');
+	  const collection = db.collection('allTypesOfTea1');
 
 	  collection.find({}).toArray(function(err, docs) {
 	  	res.send(docs)
